@@ -1,14 +1,19 @@
 public class TaxCalculator {
-   public static main( String[] args )
+   public static void main( String[] args ) {
 
-   double tax = 0.06;
+      double a = 1.00;
+      double b = 10.00;
+      double c = 100.00;
+      double t = 1.06;
 
-   double price;
-   double tax;
-   double total;
-
-      System.out.println(" the price of a " + price + " item after tax is " + total);
-      System.out.println(" the price of a " + price + " item after tax is " + total);
-      System.out.println(" the price of a " + price + " item after tax is " + total);
+      double e = a * t;
+      System.out.println(" the price of a $1 item after tax is " + "$" + e);
+      
+      double f = b * t;
+      System.out.println(" the price of a $10 item after tax is " + "$" + f);
+      
+      double g = c * t;
+      System.out.println(" the price of a $100 item after tax is " + "$" + g);
+      }
 
 }
