@@ -14,6 +14,9 @@ public class TaxCalculator {
       
       double g = c * t;
       System.out.println(" the price of a $100 item after tax is " + "$" + g);
+      
+      // Issue: Unable to figure out decimals.
+      // Output: DECIMALS.
       }
 
 }
