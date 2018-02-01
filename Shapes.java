@@ -9,7 +9,8 @@ public class Shapes {
    double ca = 2 * Math.PI * r ;
    double rp = l + w + w + l;
    double ra = l * w;
-   double rth = Math.pow(l, 2) + Math.pow(w, 2);
+   double rt = Math.pow(l, 2) + Math.pow(w, 2);
+   double rth = Math.sqrt(rt);
    
    System.out.println(" the perimeter of the circle is " + cp);
    System.out.println(" The area of the circle is  " + ca);
