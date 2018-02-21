@@ -12,7 +12,7 @@ public class CookieLine {
    inputString = JOptionPane.showInputDialog("Ok " + name + ", how many cookies would you like to make?  ");
    c = Double.parseDouble(inputString);
    
-    
+    // cup/gram conversion = http://dish.allrecipes.com/cup-to-gram-conversions/
  
    double s = c * 6.27; // number of cookies times grams of sugar per cookie in 48 cookies
    double b = c * 4.73; // number of cookies times grams of butter per cookie in 48 cookies
