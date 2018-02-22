@@ -18,6 +18,9 @@ public class CookieLine {
    double b = c * 4.73; // number of cookies times grams of butter per cookie in 48 cookies
    double f = c * 7.33; // number of cookies times grams of flour per cookie in 48 cookies
 
-   JOptionPane.showMessageDialog(null, "Cups are an imperfect and antiquated system.  You will need " + Math.round(s) + " grams of sugar, " + Math.round(b) + " grams of butter, and " + Math.round(f) + " grams of flour.  ");
+   JOptionPane.showMessageDialog(null, "Cups are an imperfect and antiquated system.  You will need " 
+                                 + Math.round(s) + " grams of sugar, " 
+                                 + Math.round(b) + " grams of butter, and " 
+                                 + Math.round(f) + " grams of flour.  ");
    }}   
    
