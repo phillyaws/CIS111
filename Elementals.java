@@ -3,12 +3,27 @@ import java.util.Scanner;
 public class Elementals {
    public static void main( String[] args ) {
    Scanner sc = new Scanner (System.in);
-   System.out.println("Pssst...wanna see a really nerdy magic trick?");
-   System.out.println("Give me a number for a circle's radius, any whole number.  ");
-   double r = sc.nextDouble(); // Radius
+   System.out.println("Please choose air, water, or steel.  ");
+   String medium = sc.next();
+   String mlower = medium.toLowerCase();
    
-   System.out.println("Now give me another number.  This is going to be the length of a rectangle.  ");
-   double l = sc.nextDouble(); // Length
+   System.out.println("Please input a distance.  ");
+   double t = sc.nextDouble(); // time
+   String time1 = Double.toString(t);
    
-   System.out.println("Now give me one final number.  This is the WIDTH of the rectangle.  ");
-   double w = sc.nextDouble(); // Width
+   
+   double a = t / 1100; // Speed of sound in air
+   double w = t / 4900; // Speed of sound in water
+   double s = t / 16400; // Speed of sound in steel
+   
+   if(medium.equalsIgnoreCase("AIR")) {
+         System.out.println("Your sound will take " + a + " seconds to travel through " + mlower + ".  ");
+     }
+   if(medium.equalsIgnoreCase("WATER")) {
+         System.out.println("Your sound will take " + w + " seconds to travel through " + mlower + ".  ");
+     }
+   if(medium.equalsIgnoreCase("STEEL")) {
+         System.out.println("Your sound will take " + s + " seconds to travel through " + mlower + ".  ");
+     }
+     
+     }}
